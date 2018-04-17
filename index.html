@@ -4,11 +4,46 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="lib/bootstrap-3.7.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap-3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="lib/css/style.css">
 	<script type="text/javascript" src="lib/jquery-3.3.1.js"></script>
-	<script type="text/javascript" src="lib/bootstrap-3.7.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="lib/bootstrap-3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body style="padding: 70px 0 0 0;height: 1000px">
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<a href="www.zhangnay.top" class="navbar-brand"><img src="" /><strong>logo</strong></a>
+			<ul class="nav nav-pills" style="font-size: 24px">
+				<li class="active"><a href="#">分类</a></li><!--不知道这个有什么用？-role="presentation"-？-->
+				<li ><a href="#">帮助</a></li>
+				<li class="disabled"><a href="#">关于</a></li>
+			
+			<form action="#" class="navbar-form navbar-left">
+				<input type="text" placeholder="还没有搜索内容呢！" class="form-control">
+				<button type="submit" class="glyphicon glyphicon-search btn btn-primary"></button>
+			</form>
+			</ul>
+		</div>
+	</nav>
 	
+	<div class="container" >
+		<div class="row">
+			<div class="col-md-4 col-md-push-8  hidden-xs left-title" style="font-size: 24px;">
+				<h3>我是被push推到右边的左侧标题</h3>
+				<div class="col-md-4 left-title-div glyphicon glyphicon-user alert-info "></div>
+				<div class="col-md-4 left-title-div glyphicon glyphicon-pencil "></div>
+				<div class="col-md-4 left-title-div glyphicon glyphicon-heart alert-info"></div>
+				<div class="clearfix"></div>
+				<div class="col-md-4 left-title-div glyphicon glyphicon-search col-md-offset-2 alert-info"></div>
+				<div class="col-md-4 left-title-div glyphicon glyphicon-home alert-info"></div>
+			</div>
+			<div class="col-md-4 col-md-push-8 visible-xs">你的屏幕好像有点小哦！</div>
+			<div class="col-md-8 col-md-pull-4">
+				<h1>我是被pull拉到左边的网站标题</h1>
+				<p>This is web pages title!This is web pages title!This is web pages title!This is web pages title!This is web pages title!This is web pages title!This is web pages title!This is web pages title!This is web pages title!This is web pages title!</p>
+			</div>
+		</div>
+		
+	</div>
 </body>
 </html>
